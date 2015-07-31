@@ -8,7 +8,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-      "popupContent": "University of North Georgia: IESA"  
+      "popupContent": "University of North Georgia: IESA",  
       "website":"http://ung.edu/institute-environmental-spatial-analysis/index.php"
       },          
       "geometry": {
