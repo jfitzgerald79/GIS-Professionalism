@@ -1,0 +1,29 @@
+body {
+  padding-top: 50px;
+  background-color:#444;  
+  margin:0;
+  padding:0;
+  font: 17px/28px Georgia;
+  font-family: Lato, 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-narrow {
+        margin: 0 auto;
+        max-width: 700px;        
+      }
+.well-small {
+        max-width: 300px;
+        margin: 0 auto 10px;
+      }
+.btn-max-width {
+        /*max-width: 250px;*/
+        margin-bottom: 5px;
+      }
+.btn-wide-75 {
+        width: 65%;
+      }
+h3 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
