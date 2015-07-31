@@ -36,13 +36,13 @@
 
 		function onEachFeature(feature, layer) {
 			var popupContent = "<p>Interactive Map Resume: Road to</br> GIS Professionalism </p>";
-			var website = "<a>http://ung.edu/institute-environmental-spatial-analysis/index.php</a>";
+			var website = "<a>Link</a>";
 
 		//if (feature.properties && feature.properties.popupContent) {
 				//popupContent += feature.properties.popupContent;
 			//}
 
-			layer.bindPopup(popupContent);
+			layer.bindPopup(popupContent, website);
 		}
 
 		L.geoJson([Career], {
