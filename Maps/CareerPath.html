@@ -35,7 +35,7 @@
 		L.esri.basemapLayer ("Gray").addTo(map);
 
 		function onEachFeature(feature, layer) {
-			var popupContent = "<p>Interactive Map Resume: Road to</br> GIS Professionalism </p>";
+			var popupContent = "<p>Interactive Map Resume</p>";
 			//var website = "<a>Link</a>";
 
 		    if (feature.properties && feature.properties.popupContent) {
@@ -46,7 +46,7 @@
 				popupContent += feature.properties.website;
 			}
 
-			layer.bindPopup(popupContent, website);
+			layer.bindPopup(popupContent);
 		}
 
 		L.geoJson([Career], {
