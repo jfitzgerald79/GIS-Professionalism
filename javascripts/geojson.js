@@ -9,7 +9,7 @@ var Career = {
       "type": "Feature",
       "properties": {
         "popupContent": "Institute of Environmental Spatial Analysis" ,
-        "website" :"IESA"
+        "website" :"http://ung.edu/institute-environmental-spatial-analysis/index.php"
         
       },          
       "geometry": {
