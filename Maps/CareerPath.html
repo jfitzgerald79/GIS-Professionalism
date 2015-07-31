@@ -38,9 +38,13 @@
 			var popupContent = "<p>Interactive Map Resume: Road to</br> GIS Professionalism </p>";
 			var website = "<a>Link</a>";
 
-		//if (feature.properties && feature.properties.popupContent) {
-				//popupContent += feature.properties.popupContent;
-			//}
+		    if (feature.properties && feature.properties.popupContent) {
+				popupContent += feature.properties.popupContent;
+			}
+			
+	            if (feature.properties && feature.properties.website) {
+				popupContent += feature.properties.website;
+			}
 
 			layer.bindPopup(popupContent, website);
 		}
