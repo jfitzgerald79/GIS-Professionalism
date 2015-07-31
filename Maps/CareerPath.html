@@ -38,13 +38,13 @@
 			var popupContent = "<p>Interactive Map Resume</p>";
 			//var website = "<a>Link</a>";
 
-		    if (feature.properties && feature.properties.popupContent) {
-				popupContent += feature.properties.popupContent;
+		    //if (feature.properties && feature.properties.popupContent) {
+				//popupContent += feature.properties.popupContent;
 			}
 			
-	           // if (feature.properties && feature.properties.website) {
-			//	popupContent += feature.properties.website;
-		//	}
+	            if (feature.properties && feature.properties.website) {
+				popupContent += feature.properties.website;
+			}
 
 			layer.bindPopup(popupContent);
 		}
