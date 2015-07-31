@@ -8,7 +8,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-        "popupContent": "http://ung.edu/institute-environmental-spatial-analysis/index.php"  
+        "popupContent": "Institute of Environmental Spatial Analysis"  
         
       },          
       "geometry": {
