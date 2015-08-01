@@ -8,7 +8,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-        "popupContent": "http://ung.edu/" 
+        "popupContent": "IESA" 
         
         
       },          
@@ -36,7 +36,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-      	"popupContent":"Cobb County tax Assessor's Office"},
+      	"popupContent":"Cobb County Tax Assessor's Office"},
       "geometry": {
         "type": "Point",
         "coordinates": [
