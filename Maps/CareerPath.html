@@ -40,15 +40,15 @@
 		        if (feature.properties && feature.properties.popupContent) {
 				popupContent += feature.properties.popupContent;
 			};
+			layer.bindPopup(popupContent);
 			
 			var popupContent2 = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
 			if (feature.properties && feature.properties.popupContent2) {
 				popupContent2 += feature.properties.popupContent2;
 			};
+			layer.bindPopup(popupContent2);
 			
-			layer.bindPopup(popupContent, popupContent2);
-			layer.bindPopup(popupContent);
 			
 			
 		  }
