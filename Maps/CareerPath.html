@@ -53,7 +53,27 @@
 			
 		  }
 
-		L.geoJson([Tax, IESA], {
+		L.geoJson([Tax], {
+
+			style: function (feature) {
+				return feature.properties && feature.properties.style;
+			},
+
+			onEachFeature: onEachFeature,
+
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 8,
+					fillColor: "#ff7800",
+					color: "#000",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.8
+				});
+			}
+		}).addTo(map);
+		
+		L.geoJson([IESA], {
 
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
