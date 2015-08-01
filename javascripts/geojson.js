@@ -8,7 +8,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-        "popupContent": "http://ung.edu/" ,
+        "popupContent": "http://ung.edu/" 
         
         
       },          
