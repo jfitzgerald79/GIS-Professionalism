@@ -41,15 +41,15 @@
 				popupContent += feature.properties.popupContent;
 			};
 			layer.bindPopup(popupContent);
-			
+		  }
+		  
+		function onEachFeature(feature, layer) {	
 			var popupContent2 = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
 			if (feature.properties && feature.properties.popupContent2) {
 				popupContent2 += feature.properties.popupContent2;
 			};
 			layer.bindPopup(popupContent2);
-			
-			
 			
 		  }
 
@@ -63,7 +63,7 @@
 
 			pointToLayer: function (feature, latlng) {
 				return L.circleMarker(latlng, {
-					radius: 8,
+					radius: 9,
 					fillColor: "#ff7800",
 					color: "#000",
 					weight: 1,
