@@ -37,17 +37,18 @@
 		function onEachFeature(feature, layer) {
 			var popupContent = '<p>Interactive Resume</p> <a href="http://ung.edu/institute-environmental-spatial-analysis/index.php/">IESA:  </a>';
 			
-		        //if (feature.properties && feature.properties.popupContent) {
-				//popupContent += feature.properties.popupContent;
-			//};
+		        if (feature.properties && feature.properties.popupContent) {
+				popupContent += feature.properties.popupContent;
+			};
 			
 			var popupContent2 = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
 			if (feature.properties && feature.properties.popupContent2) {
 				popupContent2 += feature.properties.popupContent2;
-			//};
+			};
 			
 			layer.bindPopup(popupContent, popupContent2);
+			layer.bindPopup(popupContent);
 			
 			
 		  }
