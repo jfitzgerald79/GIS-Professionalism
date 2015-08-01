@@ -9,8 +9,6 @@ var Career = {
       "type": "Feature",
       "properties": {
         "popupContent": "IESA" 
-        
-        
       },          
       "geometry": {
         "type": "Point",
