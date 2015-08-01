@@ -23,7 +23,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-      	"popupContent":"Appalachian Soil, INC"
+      	"popupContent2":"Appalachian Soil, INC"
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +36,7 @@ var Career = {
     {
       "type": "Feature",
       "properties": {
-      	"popupContent":"Cobb County Tax Assessor's Office"},
+      	"popupContent3":"Cobb County Tax Assessor's Office"},
       "geometry": {
         "type": "Point",
         "coordinates": [
