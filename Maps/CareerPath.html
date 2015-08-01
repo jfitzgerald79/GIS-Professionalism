@@ -54,7 +54,9 @@
 				popupContent3 += feature.properties.popupContent3;
 			};
 			
-			layer.bindPopup(popupContent, popupContent2, popupContent3);
+			layer.bindPopup(popupContent);
+			layer.bindPopup(popupContent2);
+			layer.bindPopup(popupContent3);
 		  }
 
 		L.geoJson([Career], {
