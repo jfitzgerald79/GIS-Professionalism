@@ -35,12 +35,12 @@
 		L.esri.basemapLayer ("Gray").addTo(map);
 
 		function onEachFeature(feature, layer) {
-			var popupContent = '<a href="http://ung.edu/">Link</a>';
+			var popupContent = '<p>Interactive Map</p> <a href="http://ung.edu/">Link</a>';
 			//var website = "<P> Text:</p>";
 
-		        //if (feature.properties && feature.properties.popupContent) {
-				//popupContent += feature.properties.popupContent;
-			//}
+		        if (feature.properties && feature.properties.popupContent) {
+				popupContent += feature.properties.popupContent;
+			}
 			
 	                
 
