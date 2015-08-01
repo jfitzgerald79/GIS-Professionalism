@@ -35,7 +35,7 @@
 		L.esri.basemapLayer ("Gray").addTo(map);
 	
 		function onEachFeature(feature, layer) {	
-			var popupContent2 = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
+			var popupContent = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
 			if (feature.properties && feature.properties.popupContent) {
 				popupContent += feature.properties.popupContent;
