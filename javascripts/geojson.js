@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "popupContent2": "Tax Assessor's Office"
+        "popupContent": "Tax Assessor's Office"
       },
       "geometry": {
         "type": "Point",
@@ -19,24 +19,4 @@
     }
   ]
 };
-
-var IESA = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "popupContent": "IESA" 
-      },          
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.86535882949829,
-          34.234760721381456
-        ]
-      }
-    }
-  ]
-};
-
 
