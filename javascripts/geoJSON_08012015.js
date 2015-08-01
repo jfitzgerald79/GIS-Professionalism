@@ -1,9 +1,13 @@
-{
+
+
+var Tax = {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "popupContent2": "Tax Assessor's Office"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -13,4 +17,4 @@
       }
     }
   ]
-}
+};
