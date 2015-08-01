@@ -33,23 +33,14 @@
     <script>
 		var map = L.map('map').setView([34.2401, -84.3722], 10);
 		L.esri.basemapLayer ("Gray").addTo(map);
-
-		function onEachFeature(feature, layer) {
-			var popupContent = '<p>Interactive Resume</p> <a href="http://ung.edu/institute-environmental-spatial-analysis/index.php/">IESA:  </a>';
-			
-		        if (feature.properties && feature.properties.popupContent) {
-				popupContent += feature.properties.popupContent;
-			};
-			layer.bindPopup(popupContent);
-		  }
-		  
+	
 		function onEachFeature(feature, layer) {	
 			var popupContent2 = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
-			if (feature.properties && feature.properties.popupContent2) {
-				popupContent2 += feature.properties.popupContent2;
+			if (feature.properties && feature.properties.popupContent) {
+				popupContent += feature.properties.popupContent;
 			};
-			layer.bindPopup(popupContent2);
+			layer.bindPopup(popupContent);
 			
 		  }
 
