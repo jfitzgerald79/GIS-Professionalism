@@ -37,10 +37,9 @@
 		function onEachFeature(feature, layer) {	
 			var popupContent = '<p>Interactive Resume</p> <a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:  </a>';
 			
-			if (feature.properties && feature.properties.popupContent) {
-				popupContent += feature.properties.popupContent;
-			};
-			layer.bindPopup(popupContent);
+			if (feature.properties.popupContent) {
+                            layer.bindPopup(feature.properties.popupContent);
+			
 			
 		  }
 
