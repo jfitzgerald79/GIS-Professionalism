@@ -7,7 +7,11 @@
     {
       "type": "Feature",
       "properties": {
-        "popupContent": "Tax Assessor's Office"
+        "popupContent": "Tax Assessor's Office",
+        "Samaksa": "Text for PopUp",
+        "Title": "Interactive Map",
+        "Description": "Shows experience locations"
+        
       },
       "geometry": {
         "type": "Point",
