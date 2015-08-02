@@ -43,15 +43,20 @@
                        // '<p>' + feature.properties.Description + '</p>' + '"/>' +
                         //'<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:</a></em></p></div>';
 			
-			var popupContent = '<div class="'+ feature.properties.Samaksa +'"><b>' + feature.properties.Title + '</b><br/>' +
-                        '<p>' + feature.properties.Description + '</p>' + 
-                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:</a></em></p></div>';
+			//!!!---THIS ONE WORKS-3---!!!
+			//var popupContent = '<div class="'+ feature.properties.Samaksa +'"><b>' + feature.properties.Title + '</b><br/>' +
+                        //'<p>' + feature.properties.Description + '</p>' + 
+                        //'<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors:</a></em></p></div>';
 			
-			
-			//!!!----THIS ONE WORKS-3----!!!
+			//!!!!----THIS ONE WORKS-4----!!!!
 			//if (feature.properties.popupContent) {
                             //layer.bindPopup(feature.properties.popupContent);
 			//}
+			
+			var popupContent = '<div class="' + feature.properties.popupContent + '"><b>' + feature.properties.Title + '</b><br/>' +
+                        '<p>' + feature.properties.Description + '</p>' + 
+                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+			
 			
 			layer.bindPopup(popupContent);
 			
