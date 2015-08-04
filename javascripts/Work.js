@@ -32,13 +32,7 @@ var Work = {
           34.63733920141577
         ]
       }
-    }
-  ]
-}
-
-var college = {
-  "type": "FeatureCollection",
-  "features": [
+    },
     {
       "type": "Feature",
       "properties": {
@@ -71,3 +65,6 @@ var college = {
     }
   ]
 }
+
+  
+
