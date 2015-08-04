@@ -1,4 +1,4 @@
-var work = {
+var Work = {
   "type": "FeatureCollection",
   "features": [
     {
