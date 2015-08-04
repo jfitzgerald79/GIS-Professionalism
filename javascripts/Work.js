@@ -3,7 +3,13 @@ var work = {
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "Title":"Interactive Resume",
+        "Position": "GIS Specialist",
+        "Duties": "Planning and executing complex projects, special-purpose and general-use maps, learn and implement new methods to acquire data and present data"
+           
+      },
+      
       "geometry": {
         "type": "Point",
         "coordinates": [
