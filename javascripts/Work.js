@@ -1,4 +1,4 @@
-{
+var work = {
   "type": "FeatureCollection",
   "features": [
     {
