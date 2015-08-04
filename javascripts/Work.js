@@ -20,7 +20,11 @@ var Work = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "Title":"Interactive Resume",
+        "Position": "Soil Technician",
+        "Duties": "Analyze soil content for Level I-III soil reports, and relate geology, hydrology, and soils to determine best placement of absorption area and septic systems"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
