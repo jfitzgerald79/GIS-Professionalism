@@ -35,3 +35,39 @@ var Work = {
     }
   ]
 }
+
+var college = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Interactive Resume",
+        "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+        "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis, and apply GIS course work to class projects"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.86565387248993,
+          34.235119953655655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Interactive Resume",
+        "Position": "Student- Anthropology",
+        "Duties": "Complete a Bachelor of Arts in Anthropology"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.37249755859375,
+          33.95368394066259
+        ]
+      }
+    }
+  ]
+}
