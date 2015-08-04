@@ -6,9 +6,8 @@ var Work = {
       "properties": {
         "Title":"Interactive Resume",
         "Position": "GIS Specialist",
-        "Duties": "Planning and executing complex projects, special-purpose and general-use maps, learn and implement new methods to acquire data and present data",
-        "Type":"Work",
-        "Color":"#00FF5"
+        "Duties": "Planning and executing complex projects, special-purpose and general-use maps, learn and implement new methods to acquire data and present data"
+        
       },
       "geometry": {
         "type": "Point",
@@ -23,9 +22,9 @@ var Work = {
       "properties": {
         "Title":"Interactive Resume",
         "Position": "Soil Technician",
-        "Duties": "Analyze soil content for Level I-III soil reports, and relate geology, hydrology, and soils to determine best placement of absorption area and septic systems",
-        "Type":"Work",
-        "Color":"#00FF5"
+        "Duties": "Analyze soil content for Level I-III soil reports, and relate geology, hydrology, and soils to determine best placement of absorption area and septic systems"
+        
+        
       },
       "geometry": {
         "type": "Point",
@@ -40,9 +39,9 @@ var Work = {
       "properties": {
         "Title": "Interactive Resume",
         "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
-        "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis, and apply GIS course work to class projects",
-        "Type":"College",
-        "Color":"#FF5500"
+        "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis, and apply GIS course work to class projects"
+        
+        
       },
       "geometry": {
         "type": "Point",
@@ -57,9 +56,9 @@ var Work = {
       "properties": {
         "Title": "Interactive Resume",
         "Position": "Student- Anthropology",
-        "Duties": "Complete a Bachelor of Arts in Anthropology",
-        "Type":"College",
-        "Color":"#FF5500"
+        "Duties": "Complete a Bachelor of Arts in Anthropology"
+        
+        
       },
       "geometry": {
         "type": "Point",
@@ -75,8 +74,8 @@ var Work = {
         "Title": "Interactive Resume",
         "Position": "USDA Forest Service GIS Intern",
         "Duties": "Update and create Geodatabases, Incorporate survey field data into Excel, and build GIS layers and databases based on land survey data, and •	Insert scanned corner card information pertaining to survey monuments and hyperlink corner card information to tract layer in a GIS ",
-        "Type":"Intern",
-        "Color":"#E6E6FA"
+        
+        
       },
       "geometry": {
         "type": "Point",
@@ -91,9 +90,8 @@ var Work = {
       "properties": {
         "Title": "Interactive Resume",
         "Position": "Georgia Wildlife Federation GIS Intern",
-        "Duties": "Create GIS layers based on GPS latitude and longitude coordinates, map layouts on the basis of  GWF’s needs and future goals, Created vicinity (1) and road guide maps (3). Ulcofauhatchee: A Guide To Life Along the Alcovy River ",\
-        "Type":"Intern",
-        "Color":"#E6E6FA"
+        "Duties": "Create GIS layers based on GPS latitude and longitude coordinates, map layouts on the basis of  GWF’s needs and future goals, Created vicinity (1) and road guide maps (3). Ulcofauhatchee: A Guide To Life Along the Alcovy River "
+        
         },
       "geometry": {
         "type": "Point",
