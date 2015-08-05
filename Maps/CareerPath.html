@@ -28,6 +28,7 @@
 	
    <!--Create source for geoJson and copy leaflet.js source-->
 	<script src="/Road-to-GIS-Professionalism/javascripts/Work.js" type="text/javascript"></script>
+	<script src="/Road-to-GIS-Professionalism/javascripts/geojson.js" type="text/javascript"></script>
 	<script src="../dist/leaflet.js"></script>
 
     <script>
@@ -106,7 +107,7 @@
 			layer.bindPopup(Work);
 		  }
 		  
-		L.geoJson([Work], {
+		L.geoJson([geojson], {
 
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
