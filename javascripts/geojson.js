@@ -9,7 +9,7 @@
       "properties": {
        "Title":"Text",
        "Position":"Head",
-       "Description":"Text"
+       "Duties":"Text"
       },
       "geometry": {
         "type": "Point",
@@ -24,7 +24,7 @@
       "properties": {
        "Title":"Text",
        "Position":"Head",
-       "Description":"Text"
+       "Duties":"Text"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +39,7 @@
       "properties": {
        "Title":"Text",
        "Position":"Head",
-       "Description":"Text"
+       "Duties":"Text"
       },
       "geometry": {
         "type": "Point",
