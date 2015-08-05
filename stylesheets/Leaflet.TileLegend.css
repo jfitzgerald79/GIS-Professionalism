@@ -50,11 +50,11 @@
     cursor: pointer;
 }
 .leaflet-control-tilelegend h4:before {
-    content: '▶ ';
+    content: 'â–¶ ';
 }
 .tilelegend-maximized h4:before,
 .leaflet-control-tilelegend .expended h4:before {
-    content: '▼ ';
+    content: 'â–¼ ';
 }
 .leaflet-control-tilelegend h1 {
     margin-top: 0;
