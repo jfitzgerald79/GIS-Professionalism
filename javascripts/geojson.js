@@ -1,7 +1,7 @@
 /**
  * @author fitzgj028555
  */
- var Tax = {
+ var Places = {
   "type": "FeatureCollection",
   "features": [
     {
