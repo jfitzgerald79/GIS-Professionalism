@@ -1,7 +1,7 @@
 /**
  * @author fitzgj028555
  */
- var Places = {
+ var geojson = {
   "type": "FeatureCollection",
   "features": [
     {
