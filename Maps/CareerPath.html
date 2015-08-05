@@ -98,6 +98,34 @@
 			}
 		}).addTo(map);
 		
+		function onEachFeature(feature, layer) {
+			var Work = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
+                        '<p>' + feature.properties.Position + '</p>' + '<p>' + feature.properties.Duties + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+			
+			layer.bindPopup(Work);
+		  }
+		  
+		L.geoJson([Work], {
+
+			style: function (feature) {
+				return feature.properties && feature.properties.style;
+			},
+
+			onEachFeature: onEachFeature,
+
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 8,
+					fillColor: "#ff7800",
+					color: "#000",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.8
+				});
+			}
+		}).addTo(map);
+		
 		
 		
 		
