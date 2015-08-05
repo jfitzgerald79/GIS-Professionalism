@@ -19,7 +19,7 @@ var LEGEND = {
                 text: "Tertiary"
             },
             {
-                coordinates: [19.66985, -72.12450, 19],
+                coordinates: [33.95332796171439, -84.51438903808594 , 19],
                 text: "Paved Residential"
             },
             {
