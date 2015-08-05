@@ -35,5 +35,5 @@ var LEGEND = {
                 text: "Path"
             }
         ]
-    }
+    }]
 ]};
