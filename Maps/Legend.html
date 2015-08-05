@@ -45,12 +45,12 @@
 
 <script type="text/javascript">
 var startPoint = [33.9540, -84.5751];
-//var map = L.map('map', {attributionControl: false, editInOSMControl: true, editInOSMControlOptions: {position: 'topleft'}}).setView(startPoint, 13),
-   // tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map),
-    //hash = new L.Hash(map);
-    //egend = (new L.Control.TileLegend()).addTo(map);
-    // legend = new L.TileLegend(map, tilelayer, L.DomUtil.get('leaflet-control-tilelegend-container'), LEGEND);
-    // legend.open();
+var map = L.map('map', {attributionControl: false, editInOSMControl: true, editInOSMControlOptions: {position: 'topleft'}}).setView(startPoint, 13),
+    tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png').addTo(map),
+  /hash = new L.Hash(map);
+    egend = (new L.Control.TileLegend()).addTo(map);
+     legend = new L.TileLegend(map, tilelayer, L.DomUtil.get('leaflet-control-tilelegend-container'), LEGEND);
+     legend.open();
 </script>
 </body>
 </html>
