@@ -7,20 +7,47 @@
     {
       "type": "Feature",
       "properties": {
-        "popupContent": "Tax Assessor's Office",
-        "Samaksa": "Text for PopUp-Samaksa",
-        "Title": "Interactive Map-Title",
-        "Description": "Shows experience locations-Description"
-        
+       "Title":"Text",
+       "Position":"Head",
+       "Description":"Text"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.57404136657715,
-          33.95368394066259
+          -84.51438903808594,
+          33.95332796171439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+       "Title":"Text",
+       "Position":"Head",
+       "Description":"Text"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.49893951416016,
+          33.94620807002934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+       "Title":"Text",
+       "Position":"Head",
+       "Description":"Text"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.49996948242188,
+          33.9624405538491
         ]
       }
     }
   ]
-};
-
+}
