@@ -7,15 +7,15 @@ var LEGEND = {
         className: 'roads',
         keys: [
             {
-                coordinates: [19.67236, -72.11825, 15],
+                coordinates: [33.9535415492620065, -84.57382678985596, 15],
                 text: "Paved primary"
             },
             {
-                coordinates: [19.8090, -72.4498, 15],
+                coordinates: [34.6671701857347, -84.50503349304199, 15],
                 text: "Paved secondary"
             },
             {
-                coordinates: [19.72434, -72.16495, 15],
+                coordinates: [34.23515099834814, -83.86546611785889, 15],
                 text: "Tertiary"
             },
             {
@@ -23,15 +23,15 @@ var LEGEND = {
                 text: "Paved Residential"
             },
             {
-                coordinates: [19.67993, -72.15773, 16],
+                coordinates: [33.95389752731669, -83.38520050048827, 16],
                 text: "Unpaved"
             },
             {
-                coordinates: [19.67921, -72.14910, 17],
+                coordinates: [34.33521498946912, -83.81246566772461, 17],
                 text: "Track"
             },
             {
-                coordinates: [19.67885, -72.16084, 17],
+                coordinates: [33.62805612409992, -83.79836797714233, 17],
                 text: "Path"
             }
         ]
