@@ -1,4 +1,4 @@
-ar LEGEND = {
+var LEGEND = {
     title: "HOT style",
     description: "Humanitarian focused OSM base layer.",
     displayPopup: true,
