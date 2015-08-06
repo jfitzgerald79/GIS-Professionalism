@@ -48,20 +48,13 @@
 		var map = L.map('map').setView([34.227700, -84.250717], 8);
 		L.esri.basemapLayer ("Gray").addTo(map);
 		//map.legendControl.addLegend(document.getElementById('legend').innerHTML);
-		
-		function getColor(p) {
-                    return p >= 26 ? '#253494' :
-                           p >=21 && p <=25.9 ? '#2c7fb8' :
-                           p >=16.9 && p <= 20.9  ? '#41b6c4' :
-                           p >=12.6 && p<=16.8 ? '#a1dab4' :
-                                       '#ffffcc';
                                       
                    // return p >= 26 ? '#253494' :
                          // p >=21 && p <=25.9 ? '#2c7fb8' :
                           // p >=16.9 && p <= 20.9  ? '#41b6c4' :
                           // p >=12.6 && p<=16.8 ? '#a1dab4' :
                                       // '#ffffcc';
-                }
+                //}
                       //$.getJSON($('link[rel="polygon"]').attr("href"), function(data){
 		      //var geojson = L.geoJson(data,{
 		      //style:style,
@@ -73,11 +66,22 @@
 	            var legend = L.control ({position: 'bottomright'});
 		
 		    legend.onAdd = function (map) {
+		    	var div = L.DomUtil.create('div', 'info legend');
+		    	 categories = ['Work','College'];
+		    	 
+		    	 for (var i = 0; i < lower.length; i++) {
+                            div.innerHTML +=
+                                     '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
+                                      lower[i] + '&ndash;' + upper[i]+'<br>';
+                        }
+                        return div
+		    };
+                        
 		    
-		    var div = L.DomUtil.create('div', 'info legend'),
-                              lower = [2,12.6,16.9,21,26],
-                              upper = [12.5,16.8,20.9,25.9,"plus"],
-                              labels = [];
+		    //var div = L.DomUtil.create('div', 'info legend'),
+                              //lower = [2,12.6,16.9,21,26],
+                             // upper = [12.5,16.8,20.9,25.9,"plus"],
+                              //labels = [];
                               
 	            //var div = L.DomUtil.create('div', 'info legend'),
                              // lower = [2,12.6,16.9,21,26],
@@ -85,15 +89,15 @@
                               //labels = [];
 
                         // loop through our density intervals and generate a label with a colored square for each interval
-                    for (var i = 0; i < lower.length; i++) {
-                            div.innerHTML +=
-                                     '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
-                                      lower[i] + '&ndash;' + upper[i]+'<br>';
-                        }
+                    //for (var i = 0; i < lower.length; i++) {
+                           // div.innerHTML +=
+                                    // '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
+                                     // lower[i] + '&ndash;' + upper[i]+'<br>';
+                        //}
 
 		
-		    return div;
-		};
+		   // return div;
+		//};
 
 		legend.addTo(map);
 	
