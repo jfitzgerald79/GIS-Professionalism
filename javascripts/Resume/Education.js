@@ -8,7 +8,8 @@ var College = {
                 "College":"University of North Georgia",
                 "Department": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
                 "Degree": "Complete a Bachelor of Science in Environmental Spatial Analysis",
-                "Graduation":"May 3, 2012"
+                "Graduation":"May 3, 2012",
+                "Number":"1"
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,8 @@ var College = {
                 "College":"University of Georgia",
                 "Department": "Anthropology",
                 "Degree": "Bachelor of Arts and Sciences in Archaeology",
-                "Graduation":"May 5, 2004"
+                "Graduation":"May 5, 2004",
+                "Number":"1"
       },
       "geometry": {
         "type": "Point",
