@@ -1,0 +1,29 @@
+var work = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+              
+              },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.57382678985596,
+          33.95382633182489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.48288917541502,
+          34.695614349908894
+        ]
+      }
+    }
+  ]
+}
