@@ -58,10 +58,10 @@
    
     <script type="text/javascript">
     
-    //queue()
-         //.defer(d3.json,"/javascripts/Resume/Education.js" )
-         //.defer(d3.json,"/javascripts/Resume/Employment.js" )
-         //.await(loadGeom);
+    queue()
+         .defer(d3.json,"/javascripts/Resume/Education.js" )
+         .defer(d3.json,"/javascripts/Resume/Employment.js" )
+         .await(loadGeom);
          
     function loadGeom(error, Education, Employment){
     	var Employment = L.geoJson(Employment.features,{
