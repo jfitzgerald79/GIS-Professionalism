@@ -5,8 +5,10 @@ var College = {
       "type": "Feature",
       "properties": {
                 "Title": "Interactive Resume",
-                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
-                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis, and apply GIS course work to class projects"
+                "College":"University of North Georgia",
+                "Department": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Degree": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Graduation":"May 3, 2012"
       },
       "geometry": {
         "type": "Point",
@@ -18,7 +20,13 @@ var College = {
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+                "Title": "Interactive Resume",
+                "College":"University of Georgia",
+                "Department": "Anthropology",
+                "Degree": "Bachelor of Arts and Sciences in Archaeology",
+                "Graduation":"May 5, 2004"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
