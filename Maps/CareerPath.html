@@ -62,12 +62,15 @@
 			//	layer.bindPopup (feature.properties.COUNTY+"<br>"+"Percent:"+" "+feature.properties.PerUnin)
 			//	}
 		   //   });
+		   
+			return d = 'Work' ? '#800026' :
+			       d = 'College'  ? '#BD0026' :
 		
 	            var legend = L.control ({position: 'bottomright'});
-		        legend.onAdd = function (map) {
+		    legend.onAdd = function (map) {
 		    	
 		    	var div = L.DomUtil.create('div', 'info legend'),
-		    	    categories = ['Work','College'],
+		    	    d = ['Work','College'],
 		    	 
 		    	 for (var i = 0; i < lower.length; i++) {
                             div.innerHTML +=
