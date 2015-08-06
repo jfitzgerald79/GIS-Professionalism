@@ -66,7 +66,7 @@
     function loadGeom(error, Education, Employment){
     	
     	var Employment = L.geoJson(Employment.features,{
-            style: densityStyle,
+            style: resumeStyle,
             onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.Employer +": "+ feature.properties.Duties+" Inh./Km²");
             }
@@ -78,13 +78,13 @@
 		//	layer.bindPopup(Work);
 		 // }
         var Education = L.geoJson(Education.features, {
-            style: densityStyle,
+            style: resumeStyle,
             onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.Department +": "+ feature.properties.Degree+" Inh./Km²");
             }
         });
         
-        function densityStyle(feature){
+        function resumeStyle(feature){
             return {
                 "fillColor": getColour(feature.properties.Number), // Call function to get fill colour
                 "weight": 2, //
