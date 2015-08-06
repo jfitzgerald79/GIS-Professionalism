@@ -64,10 +64,10 @@
 		   //   });
 		
 	            var legend = L.control ({position: 'bottomright'});
-		
-		    legend.onAdd = function (map) {
-		    	var div = L.DomUtil.create('div', 'info legend');
-		    	 categories = ['Work','College'];
+		        legend.onAdd = function (map) {
+		    	
+		    	var div = L.DomUtil.create('div', 'info legend'),
+		    	    categories = ['Work','College'],
 		    	 
 		    	 for (var i = 0; i < lower.length; i++) {
                             div.innerHTML +=
