@@ -99,13 +99,12 @@
                     d = 2 ? '#fed976':
         }
         
-        var basemap = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-            attribution: "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, under <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a>. Data by <a href='http://openstreetmap.org'>OpenStreetMap</a>, under <a href='http://www.openstreetmap.org/copyright'>ODbL</a>. Statistical data by <a href='http://www.swisstopo.ch'>Swisstopo</a>",
-            maxZoom: 8,
-            minZoom: 8
-        });
+       var startPoint = [34.075376, -84.29409];
+
+       var map = L.map('map', {attributionControl: false, editInOSMControl: true, editInOSMControlOptions: {position: 'topleft'}}).setView(startPoint, 8),
+       tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, legend: LEGEND, openLegendOnLoad: true, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map),
         
-        var map = L.map("map", {zoomControl: false}).fitBounds(Education.getBounds());
+        
         
         basemap.addTo(map);
         
