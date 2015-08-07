@@ -1,4 +1,4 @@
-var College = {
+var Education = {
   "type": "FeatureCollection",
   "features": [
     {
