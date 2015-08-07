@@ -109,7 +109,7 @@
             // Define map container. This puts the map in the &lt;div&gt; with the ID= 'densityMap'
             // Hide Zoom Controles and fit initial map to the boundaries of the geometry
             // stored in density1990.json.
-            var map = L.map("map", {zoomControl: false}).fitBounds(density1990.getBounds());
+            var map = L.map("map", {zoomControl: false}).fitBounds(Employment.getBounds());
 
             // Add the base map to the map
             basemap.addTo(map);
