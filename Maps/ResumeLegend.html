@@ -56,19 +56,19 @@
 	
 <div id="map" </div>
    
-    <script type="text/javascript">
+    <script>
     
-    queue()
-         .defer(d3.json,"/javascripts/Resume/Education.js" )
-         .defer(d3.json,"/javascripts/Resume/Employment.js" )
-         .await(loadGeom);
+    //queue()
+         //.defer(d3.json,"/javascripts/Resume/Education.js" )
+         //.defer(d3.json,"/javascripts/Resume/Employment.js" )
+         //.await(loadGeom);
          
-    function loadGeom(error,  Employment, Education){
+    //function loadGeom(error,  Employment, Education){
     	
     	var Employment = L.geoJson(Employment.features,{
             style: resumeStyle,
             onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.Employer +': '+ feature.properties.Duties+ 'Inh./Km²');
+                layer.bindPopup(feature.properties.Employer +':'+ feature.properties.Duties+ 'Inh./Km²');
             }
         });
  		//	var Work = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
@@ -147,7 +147,7 @@
          	 
          	 d3.select(".legend.leaflet-control") // select the div with class '.legend.leaflet-control'
                      .html(legendText); // Add the html stored in the legendText variable.
-    }
+    //}
    
     </script>
 </body>
