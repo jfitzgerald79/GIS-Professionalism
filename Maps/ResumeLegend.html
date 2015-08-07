@@ -157,6 +157,7 @@
 	function getColor(p) {
         	return p = 'Employment' ? '#ff7800' :
         	       p = 'College Degree' ? '#f03b20' :
+        	                           '#f03b20';
         	                              
         		 
 		}
@@ -175,7 +176,7 @@
        legend.onAdd = function (map) {
        	   
        	   var div = L.DomUtil.create('div', 'info legend'),
-       	       labels =  ['<strong>Categories</strong>'],
+       	       labels =  ['<strong>Legend</strong>'],
                location = ['Employment', 'College Degree'];
    
     		for (var i = 0; i < location.length; i++) {
