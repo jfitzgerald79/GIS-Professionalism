@@ -155,10 +155,20 @@
 	//	}
 	
 	function getColor(p) {
-        	return p === Employment ? '#ff7800' :
-        		 p ==== Education ? '#f03b20' ;
+        	return p = Employment ? '#ff7800' :
+        	       p = Education ? '#f03b20' ;
         		 
 		}
+        function style(feature) {
+            return {
+               weight: 1.5,
+               opacity: 1,
+               fillOpacity: 1,
+               radius: 6,
+               fillColor: getColor(feature.properties.TypeOfIssue),
+               color: "grey"
+
+        };
 	
        var legend = L.control({position: 'bottomright'});
            legend.onAdd = function (map) {
