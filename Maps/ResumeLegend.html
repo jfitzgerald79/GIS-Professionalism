@@ -160,16 +160,15 @@
         	lower = [2,12.6,16.9,21,26],
 		 upper = [12.5,16.8,20.9,25.9,"plus"],
         	labels = [];
-
-    // loop through our density intervals and generate a label with a colored square for each interval
+   
     		for (var i = 0; i < lower.length; i++) {
         		div.innerHTML +=
             		'<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
         		 lower[i] + '&ndash;' + upper[i]+'<br>';
-    }
+                      }
 
-    return div;
-};
+            return div;
+         };
 
         
         
