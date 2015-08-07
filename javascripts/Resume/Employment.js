@@ -9,7 +9,7 @@ var Employment = {
                 "Organization":"Cobb County Tax Assessor's Office",
                 "Position":"GIS Specialist I",
                 "Duties":"Planning and executing complex projects, special-purpose and general-use maps, learn and implement new methods to acquire data and present data",
-                "Date":"July 2012-Present"
+                "Dates":"July 2012-Present"
                 
       },
       "geometry": {
@@ -28,7 +28,7 @@ var Employment = {
               "Organization":"Appalachian Soil, INC",
               "Position":"Soil Technician",
               "Duties":"Analyze soil content for Level I-III soil reports under direct supervision, and relate geology, hydrology, and soils to determine best placement of absorption area and septic systems",
-              "Date":"April 2004 - November 2009 and October 2010 - Present"
+              "Dates":"April 2004 - November 2009 and October 2010 - Present"
               
       },
       "geometry": {
