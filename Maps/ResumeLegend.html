@@ -155,22 +155,25 @@
 	//	}
 	
 	function getColor(p) {
-        	return p = Employment ? '#ff7800' :
-        		 p = Education ? '#f03b20' :
+        	return p === Employment ? '#ff7800' :
+        		 p ==== Education ? '#f03b20' ;
         		 
 		}
 	
        var legend = L.control({position: 'bottomright'});
-
-       legend.onAdd = function (map) {
-       	    var div = L.DomUtil.create('div', 'info legend'),
-        	location = ['Employment', 'Education'];
+           legend.onAdd = function (map) {
+       	   
+       	   var div = L.DomUtil.create('div', 'info legend');
+       	       labels =  ['<strong>Categories</strong>'],
+               location = ['Employment', 'Education'];
    
     		for (var i = 0; i < location.length; i++) {
         		div.innerHTML +=
-            		'<i class="circle" style="background:' + getColor(location[i]) + '"></i> ' +
-        		 (location[i] ? location[i] + '<br>' : '+');
+        		labels.push(
+            		      '<i class="circle" style="background:' + getColor(location[i]) + '"></i> ' +
+        		 (location[i] ? location[i]  : '+'));
                       }
+                      div.innerHTML = labels.join('<br>');
        //--Works--)
        //var legend = L.control({position: 'bottomright'});
 
