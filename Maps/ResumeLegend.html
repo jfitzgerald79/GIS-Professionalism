@@ -156,7 +156,8 @@
 	
 	function getColor(p) {
         	return p = 'Employment' ? '#ff7800' :
-        	       p = 'College Degree' ? '#f03b20' ;
+        	       p = 'College Degree' ? '#f03b20' :
+        	                              "#ff7f00";
         		 
 		}
         function style(feature) {
@@ -173,7 +174,7 @@
        var legend = L.control({position: 'bottomright'});
            legend.onAdd = function (map) {
        	   
-       	   var div = L.DomUtil.create('div', 'info legend');
+       	   var div = L.DomUtil.create('div', 'info legend'),
        	       labels =  ['<strong>Categories</strong>'],
                location = ['Employment', 'College Degree'];
    
@@ -181,7 +182,7 @@
         		div.innerHTML +=
         		labels.push(
             		      '<i class="circle" style="background:' + getColor(location[i]) + '"></i> ' +
-        		 (location[i] ? location[i]  : '+'));
+        		       (location[i] ? location[i]  : '+'));
                       }
                       div.innerHTML = labels.join('<br>');
        //--Works--)
