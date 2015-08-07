@@ -4,6 +4,7 @@ var Employment = {
     {
       "type": "Feature",
       "properties": {
+                "Legend":"Employment",
                 "Title": "Interactive Resume",
                 "Employer":"Cobb County Tax Assessor's",
                 "Position":"GIS Specialist I",
@@ -22,6 +23,7 @@ var Employment = {
     {
       "type": "Feature",
       "properties": {
+              "Legend":"Employment",
               "Title": "Interactive Resume",
               "Employer":"Appalachian Soil, INC",
               "Position":"Soil Technician",
