@@ -73,29 +73,29 @@
          
     //function loadGeom(error,  Employment, Education){
     	
-    //	var Employment = L.geoJson(Employment.features,{
-       //     style: resumeStyle,
-       //     onEachFeature: function (feature, layer) {
-       //         layer.bindPopup(feature.properties.Employer +':'+ feature.properties.Duties+ 'Inh./Km²');
-       //     }
-       // });
+    	var Employment = L.geoJson(Employment.features,{
+            style: resumeStyle,
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.Employer +':'+ feature.properties.Duties+ 'Inh./Km²');
+            }
+        });
  		//	var Work = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
                        // '<p>' + feature.properties.Position + '</p>' + '<p>' + feature.properties.Duties + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                        // '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
 		//	layer.bindPopup(Work);
 		 // }
-       // var Education = L.geoJson(Education.features, {
-       //     style: resumeStyle,
-        //    onEachFeature: function (feature, layer) {
-        //        layer.bindPopup(feature.properties.Department +': '+ feature.properties.Degree+' Inh./Km²');
-         //   }
-        //});
+        var Education = L.geoJson(Education.features, {
+            style: resumeStyle,
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.Department +': '+ feature.properties.Degree+' Inh./Km²');
+            }
+        });
         
-        //function resumeStyle(feature){
-        //    return {
-        //       "fillColor": getColour(feature.properties.Number), // Call function to get fill colour
-        //        "weight": 2, 
+       // function resumeStyle(feature){
+           // return {
+             //  "fillColor": getColour(feature.properties.Number), // Call function to get fill colour
+               // "weight": 2, 
         //        "opacity": 1, 
         //        "color": '#000', 
         //        "fillOpacity": 0.7 
