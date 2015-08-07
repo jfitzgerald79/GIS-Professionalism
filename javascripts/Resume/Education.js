@@ -5,8 +5,8 @@ var Education = {
       "type": "Feature",
       "properties": {
                 "Title": "Interactive Resume",
-                "College":"University of North Georgia",
-                "Department": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
+                "Employer":"University of North Georgia",
+                "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
                 "Degree": "Complete a Bachelor of Science in Environmental Spatial Analysis",
                 "Graduation":"May 3, 2012",
                 "Number":"1"
@@ -23,8 +23,8 @@ var Education = {
       "type": "Feature",
       "properties": {
                 "Title": "Interactive Resume",
-                "College":"University of Georgia",
-                "Department": "Anthropology",
+                "Employer":"University of Georgia",
+                "Position": "Anthropology",
                 "Degree": "Bachelor of Arts and Sciences in Archaeology",
                 "Graduation":"May 5, 2004",
                 "Number":"1"
