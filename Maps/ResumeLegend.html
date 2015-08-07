@@ -121,11 +121,23 @@
 				});
 			}
 		}).addTo(map);
-    	
-    	
-        
-       
-        
+		
+	function getColor(p) {
+        	return p >= 26 ? '#253494' :
+        		 p >=21 && p <=25.9 ? '#2c7fb8' :
+        		 p >=16.9 && p <= 20.9  ? '#41b6c4' :
+        		 p >=12.6 && p<=16.8 ? '#a1dab4' :
+        					 '#ffffcc';
+		}
+	function style(feature) {
+		 return {
+		 fillColor: getColor(feature.properties.PerUnin),
+        	weight: 2,
+        	opacity: 1.0,
+        	color: 'black',
+		 fillOpacity: 0.6
+		 };
+		
             // Define the layer controls:
             // This means, that the  layers density2010, density2000 and density1990 can be chosen to
             // be displayed.
@@ -138,9 +150,25 @@
             // Add the map controls to the map
                    control.addTo(map);
         
-        var resumeLegend = L.control({position: "topleft"});
-        resumeLegend.onAdd = function (map) {var div = L.DomUtil.create("div", "info legend"); return div;}
-        resumeLegend.addTo(map);
+        //var resumeLegend = L.control({position: "topleft"});
+       // resumeLegend.onAdd = function (map) {var div = L.DomUtil.create("div", "info legend"); return div;}
+       // resumeLegend.addTo(map);
+       
+       var div = L.DomUtil.create('div', 'info legend'),
+        lower = [2,12.6,16.9,21,26],
+        upper = [12.5,16.8,20.9,25.9,"plus"],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    	for (var i = 0; i < lower.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(lower[i] + 1) + '"></i> ' +
+            lower[i] + '&ndash;' + upper[i]+'<br>';
+   }
+
+    return div;
+};
+
         
         
     </script>
