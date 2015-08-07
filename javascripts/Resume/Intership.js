@@ -8,7 +8,7 @@ var Internship = {
                 "Title": "Interactive Resume",
                 "Organization":"USDA Forest Service",
                 "Position": "GIS Internship",
-                "Duties": "Update and create Geodatabases for Chattahoochee and Oconee National Forest land tracts and monuments and Insert scanned corner card information pertaining to survey monuments and hyperlink corner card information to tract layer in a GIS. "  ,
+                "Duties": "Update and create Geodatabases for Chattahoochee and Oconee National Forest land tracts and monuments and Insert scanned corner card information pertaining to survey monuments and hyperlink corner card information to tract layer in a GIS ",
                 "Dates":"August 2011-July 2012"
                 
       },
