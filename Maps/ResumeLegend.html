@@ -68,7 +68,7 @@
     	var Employment = L.geoJson(Employment.features,{
             style: resumeStyle,
             onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.Employer +': '+ feature.properties.Duties+" Inh./Km²");
+                layer.bindPopup(feature.properties.Employer +': '+ feature.properties.Duties+ 'Inh./Km²');
             }
         });
  		//	var Work = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
@@ -80,7 +80,7 @@
         var Education = L.geoJson(Education.features, {
             style: resumeStyle,
             onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.Department +': '+ feature.properties.Degree+" Inh./Km²");
+                layer.bindPopup(feature.properties.Department +': '+ feature.properties.Degree+' Inh./Km²');
             }
         });
         
