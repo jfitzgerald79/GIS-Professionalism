@@ -9,7 +9,7 @@ var Education = {
                 "Organization":"University of North Georgia",
                 "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
                 "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
-                "Date":"January 2009 - May 2012"
+                "Dates":"January 2009 - May 2012"
                 
       },
       "geometry": {
@@ -28,7 +28,7 @@ var Education = {
                 "Organization":"University of Georgia",
                 "Position": "Anthropology",
                 "Duties": "Bachelor of Arts and Sciences in Archaeology",
-                "Date":"January 2002 - May 2004"
+                "Dates":"January 2002 - May 2004"
                 
       },
       "geometry": {
