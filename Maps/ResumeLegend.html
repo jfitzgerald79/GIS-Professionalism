@@ -22,6 +22,8 @@
   
   <script src="/Road-to-GIS-Professionalism/javascripts/Resume/Education.js" type="text/javascript"></script>
   <script src="/Road-to-GIS-Professionalism/javascripts/Resume/Employment.js" type="text/javascript"></script>
+  <script src="/Road-to-GIS-Professionalism/javascripts/Resume/Internship.js" type="text/javascript"></script>
+  
   
   
   
@@ -103,11 +105,39 @@
 		}).addTo(map);
 	
 	function onEachFeature(feature, layer) {
-			var Employment = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
-                        '<p>' + feature.properties.Employer + '</p>' + '<p>' + feature.properties.Position + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+			var Education = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
+                        '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
-			layer.bindPopup(Employment);
+			layer.bindPopup(Education);
+		  }
+		  
+		L.geoJson([Employment], {
+
+			style: function (feature) {
+				return feature.properties && feature.properties.style;
+			},
+
+			onEachFeature: onEachFeature,
+
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 8,
+					fillColor: "#ff7800",
+					color: "#000",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.8
+				});
+			}
+		}).addTo(map);
+		
+	function onEachFeature(feature, layer) {
+			var Internship = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
+                        '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+			
+			layer.bindPopup(Internship);
 		  }
 		  
 		L.geoJson([Employment], {
@@ -136,14 +166,14 @@
             // Define the layer controls:
             // This means, that the  layers density2010, density2000 and density1990 can be chosen to
             // be displayed.
-        var control = L.control.layers(
-                    {
-                         "Education" : Education
-                        ,"Employment" : Employment
-                    }, null , {collapsed:true});
+        //var control = L.control.layers(
+                    //{
+                        // "Education" : Education
+                       // ,"Employment" : Employment
+                    //}, null , {collapsed:true});
 
             // Add the map controls to the map
-                   control.addTo(map);
+                 //  control.addTo(map);
          
         //--WORKS--//           
         //function getColor(p) {
@@ -156,6 +186,7 @@
 	
 	function getColor(p) {
         	return p === 'Employment' ? '#ff7800' :
+        	       p === 'Internship' ? '#000000':
         	       p === 'College Degree' ? '#f03b20' :
         	                           '#f03b20';
         	                              
@@ -177,7 +208,7 @@
        	   
        	   var div = L.DomUtil.create('div', 'info legend'),
        	       labels =  ['<strong>Legend</strong>'],
-               location = ['Employment', 'College Degree'];
+               location = ['Employment', 'Internship', 'College Degree'];
    
     		for (var i = 0; i < location.length; i++) {
         		div.innerHTML +=
