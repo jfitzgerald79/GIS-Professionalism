@@ -57,6 +57,10 @@
 <div id="map" </div>
    
     <script>
+        var startPoint = [34.075376, -84.29409];
+        var map = L.map('map', {attributionControl: false, editInOSMControl: true, editInOSMControlOptions: {position: 'topleft'}}).setView(startPoint, 8),
+        tilelayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {maxZoom: 20, legend: LEGEND, openLegendOnLoad: true, attribution: 'Data \u00a9 <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap Contributors </a> Tiles \u00a9 HOT'}).addTo(map),
+
     
     //queue()
          //.defer(d3.json,"/javascripts/Resume/Education.js" )
@@ -100,11 +104,11 @@
         //}
         
       // Define a basemap and min/max Zoom
-            var basemap = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>. Statistical data by <a href="http://www.swisstopo.ch">Swisstopo</a>',
-                maxZoom: 8,
-                minZoom: 8
-            });
+            //var basemap = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
+             //   attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>. Statistical data by <a href="http://www.swisstopo.ch">Swisstopo</a>',
+              //  maxZoom: 8,
+              //  minZoom: 8
+            //});
 
             // Define map container. This puts the map in the &lt;div&gt; with the ID= 'densityMap'
             // Hide Zoom Controles and fit initial map to the boundaries of the geometry
@@ -112,7 +116,7 @@
             //var map = L.map("map", {zoomControl: false}).fitBounds(Employment.getBounds());
 
             // Add the base map to the map
-            basemap.addTo(map);
+           // basemap.addTo(map);
             // Add density overlay to map. Only add the overlay to map, which we want to initially
             // display. The others are added to the map through the layer controls
             //Employment.addTo(map);
