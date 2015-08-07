@@ -4,13 +4,13 @@ var Education = {
     {
       "type": "Feature",
       "properties": {
-                "Legend":"College Degree",
+                "Legend":"Undergraduate BS",
                 "Title": "Interactive Resume",
-                "Employer":"University of North Georgia",
+                "Organization":"University of North Georgia",
                 "Position": "Student-Lewis F. Rogers Institute for Environmental & Spatial Analysis",
-                "Degree": "Complete a Bachelor of Science in Environmental Spatial Analysis",
-                "Graduation":"May 3, 2012",
-                "Number":"1"
+                "Duties": "Complete a Bachelor of Science in Environmental Spatial Analysis",
+                "Date":"January 2009 - May 2012"
+                
       },
       "geometry": {
         "type": "Point",
@@ -23,13 +23,13 @@ var Education = {
     {
       "type": "Feature",
       "properties": {
-                "Legend":"College Degree",
+                "Legend":"Undergraduate BA",
                 "Title": "Interactive Resume",
-                "Employer":"University of Georgia",
+                "Organization":"University of Georgia",
                 "Position": "Anthropology",
-                "Degree": "Bachelor of Arts and Sciences in Archaeology",
-                "Graduation":"May 5, 2004",
-                "Number":"1"
+                "Duties": "Bachelor of Arts and Sciences in Archaeology",
+                "Date":"January 2002 - May 2004"
+                
       },
       "geometry": {
         "type": "Point",
