@@ -115,7 +115,7 @@
             basemap.addTo(map);
             // Add density overlay to map. Only add the overlay to map, which we want to initially
             // display. The others are added to the map through the layer controls
-            density1990.addTo(map);
+            Employment.addTo(map);
           //  density2000.addTo(map);
           //  density2010.addTo(map);
 
@@ -124,9 +124,8 @@
             // be displayed.
             var control = L.control.layers(
                     {
-                         "Density in 2010" : density2010
-                        ,"Density in 2000" : density2000
-                        ,"Density in 1990" : density1990
+                         "Education" : Education
+                        ,"Employment" : Employment
                     }, null , {collapsed:true});
 
             // Add the map controls to the map
