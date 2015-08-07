@@ -122,71 +122,34 @@
 			}
 		}).addTo(map);
     	
-    	//var Employment = L.geoJson(Employment.features,{
-          //  style: resumeStyle,
-           // onEachFeature: function (feature, layer) {
-              //  layer.bindPopup(feature.properties.Employer +':'+ feature.properties.Duties+ 'Inh./Km²');
-            //}
-        //});
- 		//	var Work = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
-                       // '<p>' + feature.properties.Position + '</p>' + '<p>' + feature.properties.Duties + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
-                       // '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
-			
-		//	layer.bindPopup(Work);
-		 // }
-        //var Education = L.geoJson(Education.features, {
-           // style: resumeStyle,
-            //onEachFeature: function (feature, layer) {
-               // layer.bindPopup(feature.properties.Department +': '+ feature.properties.Degree+' Inh./Km²');
-           // }
-        //});
+    	
         
-       // function resumeStyle(feature){
-           // return {
-             //  "fillColor": getColour(feature.properties.Number), // Call function to get fill colour
-               // "weight": 2, 
-        //        "opacity": 1, 
-        //        "color": '#000', 
-        //        "fillOpacity": 0.7 
-        //    };
-        //}
+       function resumeStyle(feature){
+            return {
+               "fillColor": getColour(feature.properties.Number), // Call function to get fill colour
+                "weight": 1, 
+                "opacity": 1, 
+                "color": '#000', 
+                "fillOpacity": 0.8 
+            };
+        }
         
-        //function getColour(d){
-        //    return  d = 1 ? '#e31a1c':
-        //            d = 2 ? '#fed976';
-        //}
+        function getColour(d){
+            return  d = 1 ? '#f03b20':
+                    d = 2 ? '#ff7800';
+        }
         
-      // Define a basemap and min/max Zoom
-            //var basemap = L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png', {
-             //   attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>. Statistical data by <a href="http://www.swisstopo.ch">Swisstopo</a>',
-              //  maxZoom: 8,
-              //  minZoom: 8
-            //});
-
-            // Define map container. This puts the map in the &lt;div&gt; with the ID= 'densityMap'
-            // Hide Zoom Controles and fit initial map to the boundaries of the geometry
-            // stored in density1990.json.
-            //var map = L.map("map", {zoomControl: false}).fitBounds(Employment.getBounds());
-
-            // Add the base map to the map
-           // basemap.addTo(map);
-            // Add density overlay to map. Only add the overlay to map, which we want to initially
-            // display. The others are added to the map through the layer controls
-            //Employment.addTo(map);
-          //  density2000.addTo(map);
-          //  density2010.addTo(map);
-
             // Define the layer controls:
             // This means, that the  layers density2010, density2000 and density1990 can be chosen to
             // be displayed.
-           // var control = L.control.layers(
-           //         {
-           //              "Education" : Education
-            //            ,"Employment" : Employment
-            //        }, null , {collapsed:true});
+        var control = L.control.layers(
+                    {
+                         "Education" : Education
+                        ,"Employment" : Employment
+                    }, null , {collapsed:true});
 
             // Add the map controls to the map
-           // control.addTo(map);
+                   control.addTo(map);
         
        // var resumeLegend = L.control({position: "topleft"});
         //resumeLegend.onAdd = function (map) {var div = L.DomUtil.create("div", "info legend"); return div;}
