@@ -1,6 +1,6 @@
 var LEGEND = {
-    title: "HOT style",
-    description: "Humanitarian focused OSM base layer.",
+    title: "Conferences",
+    description: "GIS Conferences and Map Gallery Participation.",
     displayPopup: true,
     sections: [{
         title: 'Roads',
