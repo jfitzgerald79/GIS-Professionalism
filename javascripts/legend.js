@@ -3,7 +3,7 @@ var LEGEND = {
     description: "GIS Conferences and Map Gallery Participation.",
     displayPopup: true,
     sections: [{
-        title: 'Roads',
+        title: 'GIS Conferences',
         className: 'roads',
         keys: [
             {
