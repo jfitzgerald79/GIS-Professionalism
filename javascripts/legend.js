@@ -7,8 +7,8 @@ var LEGEND = {
         className: 'roads',
         keys: [
             {
-                coordinates: [19.67236, -72.11825, 15],
-                text: "Paved primary"
+                coordinates: [34.23515099834814, -83.86563777923583,, 15],
+                text: "UNG"
             },
             {
                 coordinates: [34.23515099834814, -83.86563777923583, 15],
