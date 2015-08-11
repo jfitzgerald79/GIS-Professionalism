@@ -8,7 +8,8 @@ var LEGEND = {
         keys: [
             {
                 coordinates: [32.7063, -117.1612, 14],
-                text: "2015 ESRI User Conference"
+                text: "2015 ESRI User Conference",
+                text2: "A Three Part Suitability Analysis for Cobb County"
             },
             {
                 coordinates: [33.7550, -84.3900, 14],
