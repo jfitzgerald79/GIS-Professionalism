@@ -1,9 +1,9 @@
 var LEGEND = {
-    title: "GIS Conferences and Map Gallery Participation",
-    description: "<center> <b> <u> <i>Click Below to Expand<br/>GIS Conferences-Map Gallery </i> </u> </b> </center>",
+    title: "<center><b>GIS Conferences and Map Gallery Participation</b></center>",
+    description: "<center>Click Below to Expand<br/><i>GIS Conferences-Map Gallery</i></center>",
     displayPopup: true,
     sections: [{
-        title: 'GIS Conferences-Map Gallery',
+        title: '<center><u>GIS Conferences-Map Gallery</u></center>',
         className: 'roads',
         keys: [
             {
