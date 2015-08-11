@@ -114,7 +114,7 @@ L.TileLegend = L.Class.extend({
             });
         }
         
-        /*added text2*/
+        
         
         L.DomEvent.on(container, 'click', function (e) {
             this._map.setView(latlng, zoom);
@@ -122,14 +122,12 @@ L.TileLegend = L.Class.extend({
                 this.popup
                     .setLatLng(latlng)
                     .setContent(key.text)
-                    .setContent(key.text2)
                     .openOn(this._map);
             }
             L.DomEvent.stop(e);
         }, this);
         var txt = L.DomUtil.create('p', 'tilelegend-key', container);
         txt.innerHTML = key.text;
-        txt.innerHTML = key.text2;
     },
 
     _cloneLayer: function (layer) {
