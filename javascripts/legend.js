@@ -8,27 +8,27 @@ var LEGEND = {
         keys: [
             {
                 coordinates: [32.715738, -117.161084, 12],
-                text: "2015 San Diego, CA<br/><center><i>Click on Point for information</i></center>"
+                text: "2015 San Diego, CA<br/><i>Click on Point for information</i>"
             },
             {
                 coordinates: [33.7550, -84.3900, 14],
-                text: "Atlanta Regional Commission-ARC<br/><center><i>Click on Point for information</i></center>"
+                text: "Atlanta Regional Commission-ARC<br/><i>Click on Point for information</i>"
             },
             {
                 coordinates: [39.085704, -77.150545, 14],
-                text: "2015 (CaGIS) Cartographic Geographic Information Society<br/><center><i>Click on Point for information</i></center>"
+                text: "2015 (CaGIS) Cartographic Geographic Information Society<br/><i>Click on Point for information</i>"
             },
             {
                 coordinates: [33.9604, -83.3731, 14],
-                text: "2014 Geospatial Conference<br/><center><i>Click on Point for information</i></center>"
+                text: "2014 Geospatial Conference<br/><i>Click on Point for information</i>"
             },
             {
                 coordinates: [33.948006, -83.377319, 14],
-                text: "2011 Georgia Water Resources Conference<br/><center><i>Click on Point for information</i></center>"
+                text: "2011 Georgia Water Resources Conference<br/><i>Click on Point for information</i>"
             },
             {
                 coordinates: [33.925895, -84.5746219, 14],
-                text: "GIS Day at Cobb County, GA<br/><center><i>Click on Point for information</i></center>"
+                text: "GIS Day at Cobb County, GA<br/><i>Click on Point for information</i>"
             }
         ]
     }
