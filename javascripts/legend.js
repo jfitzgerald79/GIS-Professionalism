@@ -27,7 +27,7 @@ var LEGEND = {
                 text: "2011 Georgia Water Resources Conference<br/><i>Click on Point for information</i>"
             },
             {
-                coordinates: [33.925895, -84.5746219, 14],
+                coordinates: [33.925895, -84.574975, 14],
                 text: "GIS Day at Cobb County, GA<br/><i>Click on Point for information</i>"
             }
         ]
