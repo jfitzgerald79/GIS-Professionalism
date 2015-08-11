@@ -1,6 +1,6 @@
 var LEGEND = {
-    title: "GIS Conferences",
-    description: "GIS Conferences and Map Gallery Participation.",
+    title: "GIS Conferences and Map Gallery Participation",
+    description: "Click Below to Expand<br/>GIS Conferences-Map Gallery.",
     displayPopup: true,
     sections: [{
         title: 'GIS Conferences-Map Gallery',
