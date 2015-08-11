@@ -12,23 +12,23 @@ var LEGEND = {
             },
             {
                 coordinates: [33.7550, -84.3900, 14],
-                text: "Atlanta Regional Commission-ARC<br/>Click on Point for information"
+                text: "Atlanta Regional Commission-ARC<br/><center><i>Click on Point for information</i></center>"
             },
             {
                 coordinates: [39.085704, -77.150545, 14],
-                text: "2015 (CaGIS) Cartographic Geographic Information Society<br/>Click on Point for information"
+                text: "2015 (CaGIS) Cartographic Geographic Information Society<br/><center><i>Click on Point for information</i></center>"
             },
             {
                 coordinates: [33.9604, -83.3731, 14],
-                text: "2014 Geospatial Conference<br/>Click on Point for information"
+                text: "2014 Geospatial Conference<br/><center><i>Click on Point for information</i></center>"
             },
             {
                 coordinates: [33.948006, -83.377319, 14],
-                text: "2011 Georgia Water Resources Conference<br/>Click on Point for information"
+                text: "2011 Georgia Water Resources Conference<br/><center><i>Click on Point for information</i></center>"
             },
             {
                 coordinates: [33.925895, -84.5746219, 14],
-                text: "GIS Day at Cobb County, GA<br/>Click on Point for information"
+                text: "GIS Day at Cobb County, GA<br/><center><i>Click on Point for information</i></center>"
             }
         ]
     }
