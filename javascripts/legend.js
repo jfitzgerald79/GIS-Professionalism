@@ -7,7 +7,7 @@ var LEGEND = {
         className: 'roads',
         keys: [
             {
-                coordinates: [32.7063, -117.1612, 14],
+                coordinates: [32.715738, -117.161084, 12],
                 text: "2015 San Diego, CA"
             },
             {
