@@ -7,15 +7,15 @@ var LEGEND = {
         className: 'roads',
         keys: [
             {
-                coordinates: [32.7063, -117.1612, 15],
+                coordinates: [32.7063, -117.1612, 19],
                 text: "2015 ESRI User Conference"
             },
             {
-                coordinates: [33.7550, -84.3900, 15],
+                coordinates: [33.7550, -84.3900, 19],
                 text: "Atlanta Regional Commission"
             },
             {
-                coordinates: [39.085704, -77.150545, 15],
+                coordinates: [39.085704, -77.150545, 19],
                 text: "2015 (CaGIS) Cartographic Geographic Information Society"
             },
             {
@@ -23,7 +23,7 @@ var LEGEND = {
                 text: "2014 Geospatial Conference"
             },
             {
-                coordinates: [33.948006, -83.377319, 16],
+                coordinates: [33.948006, -83.377319, 19],
                 text: "2011 Georgia Water Resources Conference"
             }
         ]
