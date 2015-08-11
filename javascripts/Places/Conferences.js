@@ -8,7 +8,7 @@ var Conferences = {
                 "Title": "ESRI International UC",
                 "Organization":"ESRI",
                 "Position": "Map Gallery:A Three Part Suitability Analysis for Cobb County: Based on a Crime Incident Analysis, Residential Property Analysis, and Cell Tower Location Analysis",
-                "Duties": "Where do I live because I know nothing of these neighborhoods? This question can be solved by using a Geographic Information System (GIS).  By using a GIS, one can create a suitability analysis to show desirable locations for new residents. It can be simple or very complex.",
+                "Duties": "Where do I live because I know nothing of these neighborhoods? This question can be solved by using a Geographic Information System (GIS).  By using a GIS, one can create a suitability analysis to show desirable locations for new residents. It can be simple or very complex. The suitability analyses included a crime incident analysis, a residential property analysis, and a cell tower analysis.",
                 "Dates":"July 20-24, 2015"
                 
       },
@@ -28,6 +28,25 @@ var Conferences = {
                 "Organization":"Georgia URISA, ASPRS Mid South, SAMSOG, and GITA",
                 "Position": "GIS Data Preparation for CUVA ",
                 "Duties": "The underlying property based on lot size and local zoning ordinances is prepared with geospatial technology.  By using a combination of geospatial tools and python scripting in ArcGIS ModelBuilder 10.1, both enable an automated process used to create and designate the qualifying properties in an efficient and cost-effective manner. ",
+                "Dates":"October, 2014"
+                
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.37243318557739,
+          33.95375513627352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+                "Legend":"Conferences",
+                "Title": "Cartographic and Geographic Information Society (CaGIS)",
+                "Organization":"CaGIS: 42nd Map Design Competition",
+                "Position": "A Three-Part Suitability Analysis",
+                "Duties": "Where do I live because I know nothing of these neighborhoods? This question can be solved by using a Geographic Information System (GIS).  By using a GIS, one can create a suitability analysis to show desirable locations for new residents. It can be simple or very complex.The suitability analyses included a crime incident analysis, a residential property analysis, and a cell tower analysis.",
                 "Dates":"October, 2014"
                 
       },
