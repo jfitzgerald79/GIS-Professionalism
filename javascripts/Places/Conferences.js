@@ -47,7 +47,7 @@ var Conferences = {
                 "Organization":"CaGIS: 42nd Map Design Competition",
                 "Position": "A Three-Part Suitability Analysis",
                 "Duties": "Where do I live because I know nothing of these neighborhoods? This question can be solved by using a Geographic Information System (GIS).  By using a GIS, one can create a suitability analysis to show desirable locations for new residents. It can be simple or very complex.The suitability analyses included a crime incident analysis, a residential property analysis, and a cell tower analysis.",
-                "Dates":"October, 2014"
+                "Dates":"March 2015"
                 
       },
       "geometry": {
