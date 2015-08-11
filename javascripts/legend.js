@@ -19,12 +19,12 @@ var LEGEND = {
                 text: "2015 (CaGIS) Cartographic Geographic Information Society"
             },
             {
-                coordinates: [19.66985, -72.12450, 19],
-                text: "Paved Residential"
+                coordinates: [33.9604, -83.3731, 19],
+                text: "2014 Geospatial Conference"
             },
             {
-                coordinates: [19.67993, -72.15773, 16],
-                text: "Unpaved"
+                coordinates: [33.948006, -83.377319, 16],
+                text: "2011 Georgia Water Resources Conference"
             },
             {
                 coordinates: [19.67921, -72.14910, 17],
