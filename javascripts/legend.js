@@ -8,7 +8,7 @@ var LEGEND = {
         keys: [
             {
                 coordinates: [32.715738, -117.161084, 12],
-                text: "2015 San Diego, CA"
+                text: "2015 San Diego, CA<br/>Click on Point for more information"
             },
             {
                 coordinates: [33.7550, -84.3900, 14],
