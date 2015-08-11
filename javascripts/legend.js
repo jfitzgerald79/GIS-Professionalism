@@ -1,6 +1,6 @@
 var LEGEND = {
     title: "GIS Conferences and Map Gallery Participation",
-    description: "Click Below to Expand<br/>GIS Conferences-Map Gallery.",
+    description: "<center> <b> <u> <i>Click Below to Expand<br/>GIS Conferences-Map Gallery </i> </u> </b> </center>",
     displayPopup: true,
     sections: [{
         title: 'GIS Conferences-Map Gallery',
