@@ -82,10 +82,10 @@
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
 			//Works: layer.bindPopup(Education) below is code,
-			//layer.bindPopup(Education);
+			layer.bindPopup(Education);
 			
-   			Education.on('mouseover', function(){layer.bindPopup(Education, {'offset': L.point(0,-50)}).openPopup();});
-   			Education.on('mouseout', function(){Education.closePopup();});
+   			//Education.on('mouseover', function(){layer.bindPopup(Education, {'offset': L.point(0,-50)}).openPopup();});
+   		//	Education.on('mouseout', function(){Education.closePopup();});
     	}
 
    Marker.on('mouseout', function(){Marker.closePopup();});
