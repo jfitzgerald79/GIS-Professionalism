@@ -11,8 +11,8 @@ var LEGEND = {
                 text: "2015 ESRI User Conference"
             },
             {
-                coordinates: [34.23515099834814, -83.86563777923583, 15],
-                text: "University of North Georgia (IESA)"
+                coordinates: [33.7550, -84.3900, 15],
+                text: "Atlanta Regional Commission"
             },
             {
                 coordinates: [19.72434, -72.16495, 15],
