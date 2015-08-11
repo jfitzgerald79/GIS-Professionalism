@@ -49,9 +49,9 @@
     color: #747474;
     cursor: pointer;
 }
-.leaflet-control-tilelegend h4:before {
+*/.leaflet-control-tilelegend h4:before {
     content: 'â–¶ ';
-}
+}*/
 .tilelegend-maximized h4:before,
 .leaflet-control-tilelegend .expended h4:before {
     content: 'â–¼ ';
