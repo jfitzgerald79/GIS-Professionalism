@@ -3,11 +3,11 @@ var LEGEND = {
     description: "GIS Conferences and Map Gallery Participation.",
     displayPopup: true,
     sections: [{
-        title: 'GIS Conferences',
+        title: 'GIS Conferences-Map Gallery',
         className: 'roads',
         keys: [
             {
-                coordinates: [32.7063, 117.1612, 15],
+                coordinates: [32.7063, -117.1612, 15],
                 text: "2015 ESRI User Conference"
             },
             {
