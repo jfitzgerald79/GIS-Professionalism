@@ -12,7 +12,7 @@ var LEGEND = {
             },
             {
                 coordinates: [33.7550, -84.3900, 14],
-                text: "Atlanta Regional Commission"
+                text: "Atlanta Regional Commission-ARC"
             },
             {
                 coordinates: [39.085704, -77.150545, 14],
@@ -25,6 +25,10 @@ var LEGEND = {
             {
                 coordinates: [33.948006, -83.377319, 14],
                 text: "2011 Georgia Water Resources Conference"
+            }
+            {
+                coordinates: [33.925895, -84.5746219, 14],
+                text: "GIS Day at Cobb County, GA"
             }
         ]
     },
