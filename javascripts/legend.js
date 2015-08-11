@@ -15,8 +15,8 @@ var LEGEND = {
                 text: "Atlanta Regional Commission"
             },
             {
-                coordinates: [19.72434, -72.16495, 15],
-                text: "Tertiary"
+                coordinates: [39.085704, -77.150545, 15],
+                text: "2015 (CaGIS) Cartographic Geographic Information Society"
             },
             {
                 coordinates: [19.66985, -72.12450, 19],
