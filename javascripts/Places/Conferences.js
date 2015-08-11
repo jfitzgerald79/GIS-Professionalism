@@ -53,8 +53,8 @@ var Conferences = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.37243318557739,
-          33.95375513627352
+          -77.165480,
+          39.115278
         ]
       }
     },
