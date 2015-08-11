@@ -25,14 +25,6 @@ var LEGEND = {
             {
                 coordinates: [33.948006, -83.377319, 16],
                 text: "2011 Georgia Water Resources Conference"
-            },
-            {
-                coordinates: [19.67921, -72.14910, 17],
-                text: "Track"
-            },
-            {
-                coordinates: [19.67885, -72.16084, 17],
-                text: "Path"
             }
         ]
     },
