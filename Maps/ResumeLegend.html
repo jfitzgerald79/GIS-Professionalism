@@ -81,24 +81,10 @@
                         '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
-			//Works: layer.bindPopup(Education) below is code,
+			
 			layer.bindPopup(Education);
-			
-   			//Education.on('mouseover', function(){layer.bindPopup(Education, {'offset': L.point(0,-50)}).openPopup();});
-   		//	Education.on('mouseout', function(){Education.closePopup();});
-    	}
-
-   Marker.on('mouseout', function(){Marker.closePopup();});
-}
-			
-			//added
-			Education.on('mouseover', function (e) {
-        		this.openPopup();
-			});
-			Education.on('mouseout', function (e) {
-                        this.closePopup();
-			});
-		  }
+  
+		 }
 		  
 		L.geoJson([Education], {
 
