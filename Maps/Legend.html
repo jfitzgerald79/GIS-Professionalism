@@ -38,8 +38,18 @@
         height: 36px;
         line-height: 36px;
         width: 36px;
-    }
-    
+      }
+      .info {
+  		padding: 8px 8px;
+  		background: white;
+  		background: rgba(255, 255, 255, 1);
+  		box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  		border-radius: 5px;
+    	}
+  	  .info h4 {
+  		margin: 0 0 5px;
+  		color: #777;
+  	  }
 </style>
 </head>
 <body>
@@ -54,6 +64,35 @@ var map = L.map('map', {attributionControl: false, editInOSMControl: true, editI
     legend = (new L.Control.TileLegend()).addTo(map);
     // legend = new L.TileLegend(map, tilelayer, L.DomUtil.get('leaflet-control-tilelegend-container'), LEGEND);
     // legend.open();
+   	function onEachFeature(feature, layer) {
+			var Education = '<div class=+ ><b>' + feature.properties.Title + '</b><br/>' +
+                        '<p>' + feature.properties.Legend + '</p>' + '<p>' + feature.properties.Organization + '</p>' +'<p>' + feature.properties.Position + '</p>' +'<p>' + feature.properties.Duties + '</p>' +'<p>' + feature.properties.Dates + '<p/>' + '<p><em style="font-size: 0.8em"><a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/">LinkedIn</a></em></p>' +
+                        '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
+			
+			
+			layer.bindPopup(Education);
+  
+		 }
+		  
+		L.geoJson([Education], {
+
+			style: function (feature) {
+				return feature.properties && feature.properties.style;
+			},
+
+			onEachFeature: onEachFeature,
+
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, {
+					radius: 10,
+					fillColor: "#f03b20",
+					color: "#000",
+					weight: 1,
+					opacity: 1,
+					fillOpacity: 0.8
+				});
+			}
+		}).addTo(map);
 </script>
 </body>
 </html>
