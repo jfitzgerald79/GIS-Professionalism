@@ -82,6 +82,13 @@
                         '<p><em style="font-size: 0.8em"><a href="http://www.cobbassessor.org/cobbga_dnn/Tax-Assessor/">Tax Assessors Website</a></em></p></div>';
 			
 			layer.bindPopup(Education);
+			//added
+			layer.on('mouseover', function (e) {
+        		this.openPopup();
+			});
+			layer.on('mouseout', function (e) {
+                        this.closePopup();
+			});
 		  }
 		  
 		L.geoJson([Education], {
