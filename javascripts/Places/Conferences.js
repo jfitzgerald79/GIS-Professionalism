@@ -26,9 +26,9 @@ var Conferences = {
                 "Legend":"Conferences",
                 "Title": "Georgia Geospatial Conference 2014",
                 "Organization":"Georgia URISA, ASPRS Mid South, SAMSOG, and GITA",
-                "Position": "Residential Property Sale Analysis for 2013 and 2014",
-                "Duties": "Analysis shows where residential properties experienced a higher number of 2013 sales than 2014. Home buyers found lower values in 2013 than 2014.",
-                "Dates":"May 2015"
+                "Position": "GIS Data Preparation for CUVA ",
+                "Duties": "The underlying property based on lot size and local zoning ordinances is prepared with geospatial technology.  By using a combination of geospatial tools and python scripting in ArcGIS ModelBuilder 10.1, both enable an automated process used to create and designate the qualifying properties in an efficient and cost-effective manner. ",
+                "Dates":"October, 2014"
                 
       },
       "geometry": {
@@ -45,9 +45,9 @@ var Conferences = {
                 "Legend":"Map Gallery",
                 "Title": "Atlanta Regional Commission(ARC)",
                 "Organization":"The Atlanta Regional Commission is designated as a Metropolitan Area Planning and Development Commission",
-                "Position": "Anthropology",
-                "Duties": "Bachelor of Arts and Sciences in Archaeology",
-                "Dates":"October 6-8, 2014"
+                "Position": "Residential Property Sale Analysis for 2013 and 2014",
+                "Duties": "Analysis shows where residential properties experienced a higher number of 2013 sales than 2014. Home buyers found lower values in 2013 than 2014.",
+                "Dates":"May 2015"
                 
       },
       "geometry": {
@@ -61,19 +61,19 @@ var Conferences = {
     {
       "type": "Feature",
       "properties": {
-                "Legend":"Conferences",
-                "Title": "Georgia Geospatial Conference 2014",
-                "Organization":"Georgia URISA, ASPRS Mid South, SAMSOG, and GITA",
-                "Position": "Anthropology",
-                "Duties": "Bachelor of Arts and Sciences in Archaeology",
-                "Dates":"October 6-8, 2014"
+                "Legend":"GIS Day",
+                "Title": "GIS Day for Cobb County",
+                "Organization":"Cobb County Government",
+                "Position": "Participated in Cobb County's GIS Day from 2012-2014",
+                "Duties": "I displayed maps demonstrating suitability analyses and current ongoing projects",
+                "Dates":"2012-2014"
                 
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.37243318557739,
-          33.95375513627352
+          -84.574492,
+          33.925815
         ]
       }
     },
@@ -81,18 +81,18 @@ var Conferences = {
       "type": "Feature",
       "properties": {
                 "Legend":"Conferences",
-                "Title": "Georgia Geospatial Conference 2014",
-                "Organization":"Georgia URISA, ASPRS Mid South, SAMSOG, and GITA",
-                "Position": "Anthropology",
-                "Duties": "Bachelor of Arts and Sciences in Archaeology",
-                "Dates":"October 6-8, 2014"
+                "Title": "Georgia Water Resources Conference",
+                "Organization":": Georgia Environmental Protection Division, U.S. Geological Survey, Georgia Water Science Center, U.S. Department of Agriculture, Natural Resources Conservation Service, Georgia Institute of Technology, Georgia Water Resources Institute, and The University of Georgia, Water Resources Faculty.",
+                "Position": "Presented Engineering-Based New Reservoir Design and Environmental Suitability Analysis With Geospatial Technology",
+                "Duties": "The main goal of this study is to use geospatial technology, engineering and environmental knowhow to find suitable locations in North GA for building a reservoir to serve primarily for drinking water supply and irrigation. Another objective is to design the reservoir with proper engineering applications and conduct an environmental impact analysis due to its construction.",
+                "Dates":"April 2011"
                 
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.37243318557739,
-          33.95375513627352
+          -83.377916,
+          33.944918
         ]
       }
     }
