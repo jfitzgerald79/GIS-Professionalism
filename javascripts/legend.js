@@ -7,8 +7,8 @@ var LEGEND = {
         className: 'roads',
         keys: [
             {
-                coordinates: [34.23515099834814, -83.86563777923583,, 15],
-                text: "UNG"
+                coordinates: [32.7063, 117.1612, 15],
+                text: "2015 ESRI User Conference"
             },
             {
                 coordinates: [34.23515099834814, -83.86563777923583, 15],
