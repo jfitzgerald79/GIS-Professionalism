@@ -34,8 +34,8 @@ var Conferences = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.37243318557739,
-          33.95375513627352
+          -83.3731,
+          33.9604
         ]
       }
     },
@@ -53,8 +53,8 @@ var Conferences = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.148485,
-          39.079441
+          -77.150545,
+          39.085704
         ]
       }
     },
@@ -72,8 +72,8 @@ var Conferences = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.384455,
-          33.754995
+         -84.3900,
+         33.7550
         ]
       }
     },
@@ -91,8 +91,8 @@ var Conferences = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.574492,
-          33.925815
+          -84.574975,
+          33.925895
         ]
       }
     },
