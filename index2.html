@@ -41,10 +41,72 @@
                        <a href="https://www.linkedin.com/pub/james-e-fitzgerald-gisp/31/ba5/ab9/" class="btn btn-primary btn-wide-75 btn-max-width">LinkedIN</a>                       
                        </p>
                 </div>
-                
-                       
               </div> 
             </div> 
-          </div>    
+          </div> 
+          <div class="gallery">
+            <h2>Photo Slider</h2>
+            <!-- The actual moving Slider -->
+            <div class="slider">
+                <ul>
+                    <li><img src="https://lh3.googleusercontent.com/xj1HELGmah-IaReiiB73psPgnIgrA6otuBzIxPlLkN8=w729-h943-no" class="slides" alt="Image1"></li>
+                    <li><img src="https://lh3.googleusercontent.com/IyEEJlNIlOA7596C0V30gxBBPoaiwqA5mSfYZMv9wNM=w611-h943-no" class="slides" alt="Image2"></li>
+                    <li><img src="https://lh3.googleusercontent.com/qGB8JsXPh-0KzeuTM1WcnjjM-HpoOTBjdy1xiw35Esg=w729-h943-no" class="slides" alt="Image3"></li>
+                    <li><img src="https://lh3.googleusercontent.com/reQ61UnIB2yjdmjv0bSXfY1Zqvsh4sEQHektsKv3Au4=w596-h937-no" class="slides" alt="Image4"></li>
+                </ul>
+            </div>
+            <!-- Navigation Button Controls -->
+            <div id="slider-nav">
+                <button data-dir="prev">Previous</button>
+                <button data-dir="next" style="float:right;">Next</button>
+            </div>
+        </div>
+        <!-- Loading JavaScript Codes. -->
+        <script src="scripts/jquery-2.1.0.js"></script>
+        <script src="scripts/simpleSliderScript.js"></script>
+        <script>
+            // 
+            jQuery(document).ready(function ($) {
+                // creating a container variable to hold the 'UL' elements. It uses method chaining.
+                var container=$('div.slider')
+                                            .css('overflow','hidden')
+                                            .children('ul');
+                 
+                /* 
+                On the event of mouse-hover, 
+                    i) Change the visibility of Button Controls.
+                    ii) SET/RESET the "intv" variable to switch between AutoSlider and Stop mode.
+                */
+                $('.gallery').hover(function( e ){
+                    $('#slider-nav').toggle();
+                    return e.type=='mouseenter'?clearInterval(intv):autoSlider();
+                });
+                 
+                // Creating the 'slider' instance which will set initial parameters for the Slider.
+                var sliderobj= new slider(container,$('#slider-nav'));
+                /*
+                This will trigger the 'setCurrentPos' and 'transition' methods on click of any button
+                 "data-dir" attribute associated with the button will determine the direction of sliding.
+                */
+                sliderobj.nav.find('button').on('click', function(){
+                    sliderobj.setCurrentPos($(this).data('dir'));
+                    sliderobj.transition();
+                });
+                 
+                autoSlider(); // Calling autoSlider() method on Page Load.
+                 
+                /* 
+                This function will initialize the interval variable which will cause execution of the inner function after every 2 seconds automatically.
+                */
+                function autoSlider()
+                {
+                    return intv = setInterval(function(){
+                        sliderobj.setCurrentPos('next');
+                        sliderobj.transition();
+                    }, 2000);
+                }
+                 
+            });
+        </script>
       </body>
 </html>
