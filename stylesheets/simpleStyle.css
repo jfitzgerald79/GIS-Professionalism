@@ -6,8 +6,8 @@
  
 .gallery
 {
-    width:640px;
-    height:370px;
+    width:700px;
+    height:800px;
     margin:10px auto;
     background:#999;
     border:1px solid orange;
@@ -16,7 +16,7 @@
 .slider
 {
     width:inherit;
-    height:344px;
+    height:800px;
     overflow:scroll;
 }
 .slider ul
