@@ -6,9 +6,9 @@
  
 .gallery
 {
-    width:500px;
-    height:500px;
-    margin:15px auto;
+    width:400px;
+    height:350px;
+    margin:5px auto;
     background:#F5FFFA;
     border:1px solid orange;
 }
