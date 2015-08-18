@@ -75,7 +75,7 @@ L.TileLegend = L.Class.extend({
                 this.fire('open');
             }
         }, this);
-        L.DomEvent.on(title,  function () {
+        L.DomEvent.on(title, 'click',  function () {
             toggle();
         });
         if (section.expend || this._data.expendAll) {
